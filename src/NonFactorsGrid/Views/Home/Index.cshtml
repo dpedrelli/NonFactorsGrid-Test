@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="searchresult"></div>
+@Html.AjaxGrid(Url.Action("NonFactorsSearch"))
+
+
+
+
+@*<script>
+    $(function () {
+        $.ajax({
+            type: "GET",
+            url: "/Home/NonFactorsSearch",
+            contentType: 'application/html; charset=utf-8',
+            dataType: 'html',
+            data: { },
+            success: function (response) {
+                $("#searchresult").html(response);
+            },
+            error: function (xhr, status) {
+                $("#searchresult").html(xhr.responseText);
+            }
+        });
+    });
+</script>*@
