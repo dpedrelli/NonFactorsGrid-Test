@@ -1,8 +1,6 @@
 ﻿@using NonFactorsGrid.Controllers
 @model IEnumerable<PersonModel>
 
-<link rel="stylesheet" href="~/lib/nfgrid/mvc-grid.css" />
-<script src="~/lib/nfgrid/mvc-grid.js"></script>
 
 @(Html
     .Grid(Model)
@@ -25,5 +23,5 @@
 )
 
 <script>
-    $(function () { $('.mvc-grid').mvcgrid(); });
+   
 </script>

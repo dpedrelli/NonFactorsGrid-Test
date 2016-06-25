@@ -10,7 +10,7 @@ namespace NonFactorsGrid.Controllers
     {
         public IActionResult NonFactorsSearch()
         {
-            return View("~/Views/Home/_AjaxGrid.cshtml", PeopleRepository.GetPeople());
+            return PartialView("~/Views/Home/_AjaxGrid.cshtml", PeopleRepository.GetPeople());
         }
 
         public IActionResult Index()
